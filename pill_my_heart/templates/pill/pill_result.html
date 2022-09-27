@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+    <body>
+    {% if g.user %}
+    <div class="ml-4">
+        <table border="2">
+        <th>상세 정보</th>
+            <tbody>
+                    <tr><!-- 첫번째 줄 시작 -->
+                        <td colspan="3" rowspan="3" id="img">
+                            <img src="#">
+                        </td>
+                        <th class="text-center">제품명</th>
+                        <td colspan="8" id="result_drug_name">
+                            name
+                        </td>
+                    </tr><!-- 첫번째 줄 끝 -->
+                    <tr><!-- 두번째 줄 시작 -->
+                        <td colspan="8" rowspan="6">검색된 약의 정보</td>
+                    </tr><!-- 두번째 줄 끝 -->
+                    <tr><!--세번째 줄 시작-->
+                    </tr>    <!--세번째 줄 끝 -->
+                    <tr><!-- 네번째 시작 -->
+                        <td colspan="3">최수 또는 판매 중지된 상품여부</td>
+                    </tr><!-- 네번째 끝 -->
+                    <tr><!-- 다섯번째 시작 -->
+                        <td colspan="3" rowspan="2">회수 또는 판매 중지된 상품여부</td>
+                    </tr><!-- 다섯번째 끝 -->
+                    <tr><!-- 여섯번째 시작 -->
+                    </tr><!-- 여섯번째 끝 -->
+                    <tr><!-- 일곱번째 시작 -->
+                        <td colspan="3">
+                            <div class="my-3 text-start">
+                                <button type="submit" class="btn btn-warning" href="#">약품 주의사항</button>
+                            </div>
+                        </td>
+                    </tr><!-- 일곱번째 끝 -->
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="ml-4">
+        <table border="2">
+        <th>상세 정보</th>
+            <tbody>
+                    <tr><!-- 첫번째 줄 시작 -->
+                        <td colspan="3" rowspan="3" id="img">
+                            <img src="#">
+                        </td>
+                        <th class="text-center">제품명</th>
+                        <td colspan="8" id="result_drug_name">
+                            name
+                        </td>
+                    </tr><!-- 첫번째 줄 끝 -->
+                    <tr><!-- 두번째 줄 시작 -->
+                        <td colspan="8" rowspan="6">검색된 약의 정보</td>
+                    </tr><!-- 두번째 줄 끝 -->
+                    <tr><!--세번째 줄 시작-->
+                    </tr>    <!--세번째 줄 끝 -->
+                    <tr><!-- 네번째 시작 -->
+                        <td colspan="3">최수 또는 판매 중지된 상품여부</td>
+                    </tr><!-- 네번째 끝 -->
+                    <tr><!-- 다섯번째 시작 -->
+                        <td colspan="3" rowspan="2">회수 또는 판매 중지된 상품여부</td>
+                    </tr><!-- 다섯번째 끝 -->
+                    <tr><!-- 여섯번째 시작 -->
+                    </tr><!-- 여섯번째 끝 -->
+                    <tr><!-- 일곱번째 시작 -->
+                        <td colspan="3">
+                            <div class="my-3 text-start">
+                                <button type="submit" class="btn btn-warning"  disabled="disabled" href="#">약품 주의사항</button>
+                            </div>
+                        </td>
+                    </tr><!-- 일곱번째 끝 -->
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+    </body>
+{% endblock %}
